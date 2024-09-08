@@ -70,7 +70,10 @@ def add_custom_css():
             background-clip: padding-box, border-box;
             box-shadow: 0px 0px 0px 2px transparent;
         }}
-
+        
+        .css-nahz7x a {{
+            color: white !important;
+        }}
         .link-button:link {{
             color: white !important;  /* Cor para links não visitados */
         }}

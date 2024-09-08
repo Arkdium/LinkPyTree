@@ -64,7 +64,7 @@ def add_custom_css():
 
         .stApp > div {{
             position: relative;
-            z-index: 2;  /* O conteúdo vai aparecer sobre o overlay */
+            z-index: 1;  /* O conteúdo vai aparecer sobre o overlay */
         }}
         </style>
     """, unsafe_allow_html=True)

@@ -7,8 +7,8 @@ def load_css():
     st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
 def st_button(icon, url, label, iconsize):
-    icon_path = f'icons/{icon}.png'  # Caminho para o ícone
-    if icon in ['youtube', 'twitter', 'linkedin', 'medium', 'newsletter', 'cup', 'instagram', 'whatsapp', 'telegram']:
+    icon_path = f'../icons/{icon}.png'  # Caminho para o ícone
+    if icon in ['linkedin', 'instagram', 'whatsapp', 'telegram']:
         button_code = f'''
         <p>
             <a href="{url}" class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true" style="display: flex; align-items: center;">

@@ -49,6 +49,7 @@ def add_custom_css():
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-color: rgba(128, 128, 128, 0.8) !important; /* Layer cinza com 50% de transparência */
         }}
 
         /* Overlay cinza transparente */
@@ -70,8 +71,8 @@ def add_custom_css():
     """, unsafe_allow_html=True)
 
 # Função para carregar e aplicar o CSS
-#add_custom_css()
-load_css()
+add_custom_css()
+#load_css()
 
 col1, col2, col3 = st.columns(3)
 col2.image(Image.open('dp.png'))

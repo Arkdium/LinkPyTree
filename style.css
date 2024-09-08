@@ -52,12 +52,13 @@ header {
 .col2-custom {
     position: relative;
     background-image: url('background.jpg') !important;
-    background-size: cover;
+    
+}
+/*background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-}
-
+*/
 /* Layer cinza sobre a imagem de fundo */
 .col2-custom::before {
     content: '';

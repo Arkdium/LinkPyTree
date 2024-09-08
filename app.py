@@ -70,16 +70,20 @@ def add_custom_css():
             background-clip: padding-box, border-box;
             box-shadow: 0px 0px 0px 2px transparent;
         }}
-        .link-button:link {{
+
+        a.link-button:link {{
             color: white !important;  /* Cor para links não visitados */
         }}
-        .link-button:visited {{
+
+        a.link-button:visited {{
             color: #999999 !important;  /* Cor para links visitados */
         }}
-        .link-button:hover {{
+
+        a.link-button:hover {{
             color: #FFD700 !important;  /* Cor ao passar o mouse */
         }}
-        .link-button:active {{
+
+        a.link-button:active {{
             color: #FF4500 !important;  /* Cor ao clicar */
         }}
 

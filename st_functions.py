@@ -43,7 +43,7 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        .styles_stateContainer__CelYF.styles_terminalButton__JBj5T {{            
+        #div.styles_streamlitAppContainer__w82h8.styles_stateContainer__CelYF.styles_terminalButton__JBj5T {{            
             visibility: hidden !important;
             display: none !important;
         }}   

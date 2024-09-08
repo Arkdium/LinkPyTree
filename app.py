@@ -76,15 +76,15 @@ def add_custom_css():
         }}
 
         .link-button:visited {{
-            color: #999999 !important;  /* Cor para links visitados */
+            color: white !important;  /* Cor para links visitados */
         }}
 
         .link-button:hover {{
-            color: #FFD700 !important;  /* Cor ao passar o mouse */
+            color: white !important;  /* Cor ao passar o mouse */
         }}
 
         .link-button:active {{
-            color: #FF4500 !important;  /* Cor ao clicar */
+            color: white !important;  /* Cor ao clicar */
         }}
 
         </style>

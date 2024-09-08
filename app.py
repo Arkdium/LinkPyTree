@@ -1,8 +1,10 @@
 import streamlit as st
-from st_functions import st_button, load_css
+from st_functions import st_button, load_css, add_bg_image
 from PIL import Image
 
 load_css()
+
+add_bg_image('background.jpg')
 
 col1, col2, col3 = st.columns(3)
 col2.image(Image.open('dp.png'))

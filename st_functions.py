@@ -34,6 +34,31 @@ def st_button(icon, url, label, iconsize):
 
     st.markdown(button_code, unsafe_allow_html=True)
 
+def add_bg_image(image_file):
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url({image_file});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }}
+        .overlay {{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(128, 128, 128, 0.5); /* Layer cinza com 50% de transparência */
+            z-index: -1;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
 # style="display: flex; align-items: center;">
 #def load_css():
 #    with open("style.css") as f:

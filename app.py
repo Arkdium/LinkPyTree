@@ -10,6 +10,7 @@ add_custom_css()
 col1, col2, col3 = st.columns(3)
 col2.image(Image.open('dp.png'))
 
+st.set_page_config(page_title="Jullie Canejo - Driver TVDE")
 st.header('Jullie Canejo 🫶🏻')
 
 st.info('Motorista TVDE no Porto.')

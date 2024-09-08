@@ -43,7 +43,7 @@ def add_custom_css():
             font-size: 19px;
         }}
 
-        .styles_terminalButton__JBj5T::after {{
+        .styles_terminalButton__JBj5T:after {{
             visibility: hidden;
         }}    
                 

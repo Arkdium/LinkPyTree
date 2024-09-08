@@ -5,7 +5,10 @@ from PIL import Image
 load_css()
 
 col1, col2, col3 = st.columns(3)
-col2.image(Image.open('dp.png'))
+with col2:
+    st.markdown('<div class="col2-custom">', unsafe_allow_html=True)
+    col2.image(Image.open('dp.png'))
+    st.markdown('</div>', unsafe_allow_html=True)
 
 st.header('Jullie Canejo 🫶🏻')
 

@@ -19,7 +19,22 @@ def st_button(icon, url, label, iconsize):
         icon_base64 = get_base64_image(icon_path)
         button_code = f'''
         <p style="text-align: center;">
-            <a href="{url}" target="_blank" class="btn btn-outline-primary btn-lg" type="button" aria-pressed="true" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 10px 20px; border-radius: 8px; border: 2px solid #007bff; background-color: #007bff; color: white;">
+            <a href="{url}" target="_blank" class="btn btn-outline-primary btn-lg" type="button" aria-pressed="true" style="
+                display: inline-flex; 
+                align-items: center; 
+                justify-content: center; 
+                text-decoration: none; 
+                padding: 10px 20px; 
+                border-radius: 8px; 
+                border: 2px solid #333333; 
+                background-color: #333333; 
+                color: white; 
+                width: 80%;  /* Largura adaptável */
+                max-width: 500px;  /* Limita a largura máxima */
+                min-width: 200px;  /* Define a largura mínima para telas pequenas */
+                font-size: 16px;  /* Tamanho do texto */
+                margin: 10px auto; /* Centraliza o botão */
+                ">
                 <img src="data:image/png;base64,{icon_base64}" width="{iconsize}" height="{iconsize}" style="margin-right: 10px;">
                 {label}
             </a>

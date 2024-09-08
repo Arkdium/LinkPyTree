@@ -30,8 +30,6 @@ def st_button(icon, url, label, iconsize):
                 background: linear-gradient(90deg, #4169E1, #333333);  /* Gradiente de azul royal para cinza escuro */
                 color: white; 
                 width: 100%;  /* Largura adaptável */
-                max-width: 500px;  /* Limita a largura máxima */
-                min-width: 200px;  /* Define a largura mínima para telas pequenas */
                 font-size: 16px;  /* Tamanho do texto */
                 margin: 10px auto; /* Centraliza o botão */
                 ">
@@ -41,8 +39,20 @@ def st_button(icon, url, label, iconsize):
         </p>'''
     else:
         button_code = f'''
-        <p>
-            <a href="{url}" class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true">
+        <p style="text-align: center;">
+            <a href="{url}" target="_blank" class="btn btn-outline-primary btn-lg" type="button" aria-pressed="true" style="
+                display: inline-block; 
+                padding: 10px 20px; 
+                border-radius: 8px; 
+                border: 2px solid #4169E1; 
+                background: linear-gradient(90deg, #4169E1, #333333);  /* Gradiente de azul royal para cinza escuro */
+                color: white; 
+                text-align: center; 
+                text-decoration: none; 
+                width: 80%;  /* Largura adaptável */
+                font-size: 16px;  /* Tamanho do texto */
+                margin: 10px auto; /* Centraliza o botão */
+                ">
                 {label}
             </a>
         </p>'''

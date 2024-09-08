@@ -28,15 +28,7 @@ def add_custom_css():
                 
         .stAlert {{
             text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 10px;
-            background-color: #f0f8ff;  /* Cor de fundo similar ao st.info */
-            border-left: 5px solid #00acc1;  /* Bordar lateral semelhante ao st.info */
-            border-radius: 5px;
-            color: #000000;  /* Cor do texto */
-            margin: 0 auto;
-            width: 80%;
+            
         }}
 
         .css-10trblm.e16nr0p30 {{

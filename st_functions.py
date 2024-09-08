@@ -43,7 +43,7 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        viewerBadge_link__qRIco {{            
+        .viewerBadge_link__qRIco {{            
             visibility: hidden !important;
             display: none !important;
         }}   

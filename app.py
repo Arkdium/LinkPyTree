@@ -46,24 +46,23 @@ def add_custom_css():
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;            
-        }}
-
-        /* Overlay cinza transparente */
-        .overlay {{
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
+            border-radius: 10px;
+            padding: 20px;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6) !important; /* Layer cinza com 50% de transparência */
-            z-index: -1;
+            overflow: hidden;        
+        }}
+        
+        /* Ajuste para dispositivos móveis */
+        @media screen and (max-width: 767px) {{
+            .col2-custom {{
+                background-size: cover;
+                padding: 10px;
+            }}
+            .col2-custom > div {{
+                font-size: 16px;  /* Ajusta o tamanho do texto no mobile */
+            }}
         }}
 
-        .stApp > div {{
-            position: relative;
-            z-index: 2;  /* O conteúdo vai aparecer sobre o overlay */
-        }}
         </style>
     """, unsafe_allow_html=True)
 

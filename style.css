@@ -30,7 +30,7 @@ header {
 }
 
 .stApp {
-    background-image: url('background.jpg');  /* Caminho relativo da imagem */
+    background-image: url('background.jpg') !important; /* Caminho relativo da imagem */
     background-size: cover;
     background-color: #333333;
     background-position: center;

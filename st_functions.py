@@ -26,7 +26,7 @@ def add_custom_css():
             max-width: 40%;
         }}
                 
-        .css-17z2rne.e13vu3m50 {{
+        .css-nahz7x e16nr0p34, .css-17z2rne.e13vu3m50 {{
             text-align: center;
             
         }}

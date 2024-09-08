@@ -44,8 +44,7 @@ def add_custom_css():
         }}
         
         .styles_stateContainer__CelYF {{            
-            visibility: hidden !important;
-            display: none !important;
+            visibility: hidden !important;            
         }}   
              
         #MainMenu {{

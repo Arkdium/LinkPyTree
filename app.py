@@ -61,6 +61,11 @@ def add_custom_css():
             background-color: rgba(128, 128, 128, 0.8) !important; /* Layer cinza com 50% de transparência */
             z-index: -1;
         }}
+
+        .stApp > div {{
+            position: relative;
+            z-index: 2;  /* O conteúdo vai aparecer sobre o overlay */
+        }}
         </style>
     """, unsafe_allow_html=True)
 

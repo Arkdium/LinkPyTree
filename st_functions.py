@@ -43,11 +43,11 @@ def add_custom_css():
             font-size: 19px;
         }}
 
-        .styles_terminalButton__JBj5T {{
+        .styles_terminalButton__JBj5T:after {{
             visibility: hidden;
         }}    
                 
-        .button[data-testid="manage-app-button"] {{
+        button[data-testid="manage-app-button"] {{
             visibility: hidden;
         }}
                 

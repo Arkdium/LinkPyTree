@@ -20,7 +20,7 @@ def st_button(icon, url, label, iconsize):
         button_code = f'''
         <p style="text-align: center;">
             <a href="{url}" target="_blank" class="btn btn-outline-primary btn-lg" type="button" aria-pressed="true" style="
-                display: inline-block; 
+                display: block;
                 align-items: center; 
                 justify-content: center; 
                 text-decoration: none; 

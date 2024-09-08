@@ -47,7 +47,7 @@ def add_custom_css():
             visibility: hidden !important;
         }}    
                 
-        .button[data-testid='manage-app-button'] {{
+        button[data-testid='manage-app-button'] {{
             visibility: hidden !important;
         }}
                 

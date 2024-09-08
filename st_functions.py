@@ -43,7 +43,7 @@ def add_custom_css():
             font-size: 19px;
         }}
 
-        MainMenu {{
+        #MainMenu {{
             visibility: hidden;
         }}
         footer {{

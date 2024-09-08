@@ -1,4 +1,5 @@
 import streamlit as st
+import base64
 
 
 def load_css():
@@ -6,13 +7,20 @@ def load_css():
         st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
     st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
+def get_base64_image(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode("utf-8")
+
 def st_button(icon, url, label, iconsize):
-    icon_path = 'dp.png'#f'icons/{icon}.png'  # Caminho para o ícone
+    icon_path = f'icons/{icon}.png'  # Caminho para o ícone
+    
     if icon in ['linkedin', 'instagram', 'whatsapp', 'telegram']:
+        # Codifica a imagem em base64
+        icon_base64 = get_base64_image(icon_path)
         button_code = f'''
         <p>
             <a href="{url}" class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true" style="display: flex; align-items: center;">
-                <img src="{icon_path}" style="margin-right: 10px;">
+                <img src="data:image/png;base64,{icon_base64}" width="{iconsize}" height="{iconsize}" style="margin-right: 10px;">
                 {label}
             </a>
         </p>'''
@@ -23,7 +31,7 @@ def st_button(icon, url, label, iconsize):
                 {label}
             </a>
         </p>'''
-    
+
     st.markdown(button_code, unsafe_allow_html=True)
 
 #def load_css():

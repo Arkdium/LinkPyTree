@@ -70,7 +70,8 @@ def add_custom_css():
     """, unsafe_allow_html=True)
 
 # Função para carregar e aplicar o CSS
-add_custom_css()
+#add_custom_css()
+load_css()
 
 col1, col2, col3 = st.columns(3)
 col2.image(Image.open('dp.png'))

@@ -44,13 +44,10 @@ def add_custom_css():
         }}
         
         .styles_terminalButton__JBj5T {{
+            display: block;
             visibility: hidden !important;
         }}    
-                
-        button[data-testid='manage-app-button'] {{
-            visibility: hidden !important;
-        }}
-                
+             
         MainMenu {{
             visibility: hidden;
         }}

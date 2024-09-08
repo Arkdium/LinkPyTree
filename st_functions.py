@@ -20,7 +20,7 @@ def st_button(icon, url, label, iconsize):
         button_code = f'''
         <p style="text-align: center;">
             <a href="{url}" target="_blank" class="btn btn-outline-primary btn-lg" type="button" aria-pressed="true" style="
-                display: inline-flex; 
+                display: inline-block; 
                 align-items: center; 
                 justify-content: center; 
                 text-decoration: none; 
@@ -49,7 +49,7 @@ def st_button(icon, url, label, iconsize):
                 color: white; 
                 text-align: center; 
                 text-decoration: none; 
-                width: 80%;  /* Largura adaptável */
+                width: 100%;  /* Largura adaptável */
                 font-size: 16px;  /* Tamanho do texto */
                 margin: 10px auto; /* Centraliza o botão */
                 ">

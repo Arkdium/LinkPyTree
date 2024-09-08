@@ -28,3 +28,21 @@ footer {
 header {
     visibility: hidden;
 }
+
+.stApp {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.1); /* Layer cinza com 50% de transparência */
+    z-index: -1;
+}

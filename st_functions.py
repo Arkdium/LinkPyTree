@@ -56,6 +56,7 @@ def add_custom_css():
         header {{
             visibility: hidden;
         }}
+                
 
         /* Aplicando a imagem de fundo em base64 */
         .stApp {{
@@ -93,6 +94,16 @@ def add_custom_css():
         }}
         
         </style>
+
+        <script>
+        // Garante que o botão permaneça oculto mesmo após interações dinâmicas
+        document.addEventListener('DOMContentLoaded', function() {{
+            var terminalButton = document.querySelector('.styles_terminalButton__JBj5T');
+            if (terminalButton) {{
+                terminalButton.style.visibility = 'hidden';
+            }}
+        }});
+        </script>
     """, unsafe_allow_html=True)
 
 def get_base64_image(image_path):

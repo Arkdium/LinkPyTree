@@ -12,7 +12,7 @@ col2.image(Image.open('dp.png'))
 
 st.header('Jullie Canejo 🫶🏻')
 
-st.markdown('<div class="center-text">Motorista TVDE no Porto.</div>', unsafe_allow_html=True) #st.info('Motorista TVDE no Porto.')
+st.info('Motorista TVDE no Porto.')
 
 icon_size = 45
 

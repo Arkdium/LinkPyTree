@@ -48,11 +48,12 @@ def add_custom_css():
             display: none !important;
         }}   
                 
-        button[data-testid="manage-app-button"] {{
+        [data-testid="manage-app-button"] {{
             display: none !important;
+            visibility: hidden !important;
         }} 
              
-        MainMenu {{
+        #MainMenu {{
             visibility: hidden;
         }}
         footer {{

@@ -58,7 +58,7 @@ def add_custom_css():
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(128, 128, 128, 0.5); /* Layer cinza com 50% de transparência */
+            background-color: rgba(128, 128, 128, 0.5) !important; /* Layer cinza com 50% de transparência */
             z-index: -1;
         }}
         </style>

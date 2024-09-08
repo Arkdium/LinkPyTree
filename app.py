@@ -2,45 +2,6 @@ import streamlit as st
 from st_functions import st_button, load_css, get_base64_image
 from PIL import Image
 
-def add_custom_css_col2():
-    # Caminho da imagem de fundo para a coluna col2
-    background_image_base64 = get_base64_image("background.jpg")  # Ajuste o caminho da sua imagem de fundo
-    
-    st.markdown(f"""
-        <style>
-        /* Definindo o estilo para a coluna col2 */
-        .col2-custom {{
-            position: relative;
-            background-image: url("data:image/jpeg;base64,{background_image_base64}");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            padding: 20px;
-            height: 100%;
-        }}
-
-        /* Aplicando o overlay cinza escuro */
-        .col2-custom::before {{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6); /* Overlay cinza escuro com 60% de opacidade */
-            z-index: 1;
-            border-radius: 10px; /* Para aplicar arredondamento também no overlay */
-        }}
-
-        /* Garantindo que o conteúdo dentro da coluna col2 fique acima do overlay */
-        .col2-custom > div {{
-            position: relative;
-            z-index: 2;  /* O conteúdo vai aparecer sobre o overlay */
-        }}
-        </style>
-    """, unsafe_allow_html=True)
-
 def add_custom_css():
     # Caminho da imagem de fundo
     background_image_base64 = get_base64_image("background.jpg")  # Substitua pelo caminho correto da sua imagem
@@ -85,8 +46,7 @@ def add_custom_css():
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: rgba(128, 128, 128, 0.8) !important; /* Layer cinza com 50% de transparência */
+            background-attachment: fixed;            
         }}
 
         /* Overlay cinza transparente */
@@ -96,20 +56,20 @@ def add_custom_css():
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(128, 128, 128, 0.8) !important; /* Layer cinza com 50% de transparência */
+            background-color: rgba(0, 0, 0, 0.6) !important; /* Layer cinza com 50% de transparência */
             z-index: -1;
         }}
 
         .stApp > div {{
             position: relative;
-            z-index: 1;  /* O conteúdo vai aparecer sobre o overlay */
+            z-index: 2;  /* O conteúdo vai aparecer sobre o overlay */
         }}
         </style>
     """, unsafe_allow_html=True)
 
 # Função para carregar e aplicar o CSS
-#add_custom_css()
-add_custom_css_col2()
+add_custom_css()
+
 #load_css()
 
 col1, col2, col3 = st.columns(3)

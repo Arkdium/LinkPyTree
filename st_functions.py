@@ -14,7 +14,7 @@ def get_base64_image(image_path):
 def st_button(icon, url, label, iconsize):
     icon_path = f'icons/{icon}.png'  # Caminho para o ícone
     
-    if icon in ['linkedin', 'instagram', 'whatsapp', 'telegram']:
+    if icon in ['linkedin', 'instagram', 'whatsapp', 'telegram', 'star']:
         # Codifica a imagem em base64
         icon_base64 = get_base64_image(icon_path)
         button_code = f'''

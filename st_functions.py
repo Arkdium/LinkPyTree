@@ -27,6 +27,7 @@ def add_custom_css():
         }}
                 
         .css-1w6rlcb.e12sa3f30, css-17z2rne.e13vu3m50 {{
+            display: block; 
             text-align: center;
             margin: 0 auto;
             width: 80%;

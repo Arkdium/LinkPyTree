@@ -42,7 +42,11 @@ def add_custom_css():
         p {{
             font-size: 19px;
         }}
-
+        
+        #root > div:nth-child(1) > div > div > button {{
+            visibility: hidden;
+        }}    
+        
         .styles_terminalButton__JBj5T:after {{
             visibility: hidden;
         }}    

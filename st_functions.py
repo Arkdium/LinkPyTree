@@ -88,6 +88,18 @@ def st_button(icon, url, label, iconsize):
             </a>
         </p>'''
 
+    elif icon == 'telegram':
+        button_code = f'''
+        <p>
+            <a href="{url}" class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="{iconsize}" height="{iconsize}" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path d="M16 1.538c-.5.216-1.04.37-1.6.438a5.422 5.422 0 0 0 2.378-3.065c-.527.313-1.103.539-1.707.66A2.705 2.705 0 0 0 8.688 1.078a2.757 2.757 0 0 0-4.865 1.885 7.81 7.81 0 0 1-5.719-2.905 2.755 2.755 0 0 0 .852 3.676 2.712 2.712 0 0 1-1.248-.344v.034c0 1.288.926 2.36 2.163 2.603a2.765 2.765 0 0 1-1.246.048 2.757 2.757 0 0 0 2.571 1.914 5.512 5.512 0 0 1-3.41 1.178A7.79 7.79 0 0 0 4.21 15a7.797 7.797 0 0 0 7.825-7.825c0-.119-.003-.238-.009-.355A5.57 5.57 0 0 0 16 1.538z"/>
+                </svg>
+                {label}
+            </a>
+        </p>'''
+
+
     elif icon == '':
         button_code = f'''
         <p>

@@ -26,8 +26,8 @@ def st_button(icon, url, label, iconsize):
                 text-decoration: none; 
                 padding: 10px 20px; 
                 border-radius: 8px; 
-                background: linear-gradient(90deg, #4169E1, #333333);  /* Gradiente de fundo */
-                color: white;  /* Texto sempre branco */
+                background: linear-gradient(90deg, #4169E1, #333333);  /* Gradiente de azul royal para cinza escuro */
+                color: white !important;  /* Texto sempre branco */
                 width: 100%;  /* Largura total */
                 font-size: 16px;  /* Tamanho do texto */
                 margin: 10px 0;  /* Margem centralizada */
@@ -48,8 +48,8 @@ def st_button(icon, url, label, iconsize):
                 display: block;  
                 padding: 10px 20px; 
                 border-radius: 8px; 
-                background: linear-gradient(90deg, #4169E1, #333333);  /* Gradiente de fundo */
-                color: white;  /* Texto sempre branco */
+                background: linear-gradient(90deg, #4169E1, #333333);  /* Gradiente de azul royal para cinza escuro */
+                color: white !important;  /* Texto sempre branco */
                 text-align: center; 
                 text-decoration: none; 
                 width: 100%;  /* Largura total */

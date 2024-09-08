@@ -52,16 +52,7 @@ def add_custom_css():
             overflow: hidden;        
         }}
         
-        /* Ajuste para dispositivos móveis */
-        @media screen and (max-width: 767px) {{
-            .col2-custom {{
-                background-size: cover;
-                padding: 10px;
-            }}
-            .col2-custom > div {{
-                font-size: 16px;  /* Ajusta o tamanho do texto no mobile */
-            }}
-        }}
+        
 
         </style>
     """, unsafe_allow_html=True)

@@ -52,7 +52,19 @@ def add_custom_css():
             overflow: hidden;        
         }}
         
-        
+        a.link-button {{
+            color: white !important;  /* Cor padrão do link */
+            text-decoration: none !important;
+        }}
+        a.link-button:visited {{
+            color: #999999 !important;  /* Cor para links já visitados */
+        }}
+        a.link-button:hover {{
+            color: #FFD700 !important;  /* Cor ao passar o mouse sobre o link (hover) */
+        }}
+        a.link-button:active {{
+            color: #FF4500 !important;  /* Cor no momento do clique */
+        }}
 
         </style>
     """, unsafe_allow_html=True)

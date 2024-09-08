@@ -96,8 +96,21 @@ def add_custom_css():
         .css-nahz7x a {{
             color: white !important;
         }}
+
         
-        </style>        
+        
+        </style>     
+
+        <script>
+        // Verifica continuamente se o botão está presente e o remove do DOM
+        setInterval(function() {{
+            var manageAppButton = document.querySelector('button[data-testid="manage-app-button"]');
+            if (manageAppButton) {{
+                manageAppButton.style.display = 'none';
+            }}
+        }}, 1000);  // Verifica a cada segundo
+        </script>   
+        
     """, unsafe_allow_html=True)
 
 def get_base64_image(image_path):

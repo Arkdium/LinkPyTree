@@ -43,7 +43,7 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        #div.styles_streamlitAppContainer__w82h8.styles_stateContainer__CelYF.styles_terminalButton__JBj5T {{            
+        viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {{            
             visibility: hidden !important;
             display: none !important;
         }}   

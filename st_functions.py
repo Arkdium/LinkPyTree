@@ -28,6 +28,8 @@ def add_custom_css():
                 
         .css-nahz7x e16nr0p34, .css-17z2rne.e13vu3m50 {{
             text-align: center;
+            margin: 0 auto;
+            width: 80%;
             
         }}
 

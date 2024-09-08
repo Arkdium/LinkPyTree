@@ -51,7 +51,7 @@ def add_custom_css():
 
         /* Overlay cinza transparente */
         .overlay {{
-            position: relativa;
+            position: relative;
             top: 0;
             left: 0;
             width: 100%;

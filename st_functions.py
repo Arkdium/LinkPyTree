@@ -12,7 +12,7 @@ def st_button(icon, url, label, iconsize):
         button_code = f'''
         <p>
             <a href="{url}" class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true" style="display: flex; align-items: center;">
-                <img src="{icon_path}" alt="{icon}" width="{iconsize}" height="{iconsize}" style="margin-right: 10px;">
+                <img src="{icon_path}" style="margin-right: 10px;">
                 {label}
             </a>
         </p>'''

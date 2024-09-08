@@ -52,7 +52,7 @@ def add_custom_css():
             overflow: hidden;        
         }}
         
-       a.link-button {{
+       link-button {{
             display: block;
             align-items: center;
             justify-content: center;
@@ -71,19 +71,19 @@ def add_custom_css():
             box-shadow: 0px 0px 0px 2px transparent;
         }}
 
-        a.link-button:link {{
+        .link-button:link {{
             color: white !important;  /* Cor para links não visitados */
         }}
 
-        a.link-button:visited {{
+        .link-button:visited {{
             color: #999999 !important;  /* Cor para links visitados */
         }}
 
-        a.link-button:hover {{
+        .link-button:hover {{
             color: #FFD700 !important;  /* Cor ao passar o mouse */
         }}
 
-        a.link-button:active {{
+        .link-button:active {{
             color: #FF4500 !important;  /* Cor ao clicar */
         }}
 

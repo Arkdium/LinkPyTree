@@ -45,6 +45,7 @@ def add_custom_css():
         
         .styles_terminalButton__JBj5T {{            
             visibility: hidden !important;
+            display: none !important;
         }}   
                 
         button[data-testid="manage-app-button"] {{
@@ -102,15 +103,25 @@ def add_custom_css():
         </style>     
 
         <script>
-        // Verifica continuamente se o botão está presente e o remove do DOM
-        setInterval(function() {{
+        // Função para remover o botão 'Manage app' diretamente do DOM
+        function removeManageAppButton() {{
             var manageAppButton = document.querySelector('button[data-testid="manage-app-button"]');
             if (manageAppButton) {{
-                manageAppButton.style.display = 'none';
+                manageAppButton.parentNode.removeChild(manageAppButton);
             }}
+        }}
+
+        // Remove o botão assim que o DOM estiver pronto
+        document.addEventListener('DOMContentLoaded', function() {{
+            removeManageAppButton();
+        }});
+
+        // Verifica continuamente e remove o botão, caso ele reapareça
+        setInterval(function() {{
+            removeManageAppButton();
         }}, 1000);  // Verifica a cada segundo
-        </script>   
-        
+        </script>  
+
     """, unsafe_allow_html=True)
 
 def get_base64_image(image_path):

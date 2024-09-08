@@ -18,8 +18,8 @@ def st_button(icon, url, label, iconsize):
         # Codifica a imagem em base64
         icon_base64 = get_base64_image(icon_path)
         button_code = f'''
-        <p>
-            <a href="{url}" class="btn btn-outline-primary btn-lg btn-block" type="button" aria-pressed="true" style="display: flex; align-items: center;">
+        <p style="text-align: center;">
+            <a href="{url}" target="_blank" class="btn btn-outline-primary btn-lg" type="button" aria-pressed="true" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 10px 20px; border-radius: 8px; border: 2px solid #007bff; background-color: #007bff; color: white;">
                 <img src="data:image/png;base64,{icon_base64}" width="{iconsize}" height="{iconsize}" style="margin-right: 10px;">
                 {label}
             </a>

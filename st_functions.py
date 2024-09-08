@@ -43,7 +43,10 @@ def add_custom_css():
             font-size: 19px;
         }}
 
-        #MainMenu {{
+        .styles_terminalButton__JBj5T {{
+            visibility: hidden;
+        }}    
+        MainMenu {{
             visibility: hidden;
         }}
         footer {{

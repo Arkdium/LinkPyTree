@@ -1,10 +1,12 @@
 import streamlit as st
-from st_functions import st_button, load_css
+from st_functions import st_button, load_css, get_base64_image
 from PIL import Image
 
 load_css()
 
 def add_custom_css():
+    
+    background_image_base64 = get_base64_image("background.jpg")
     st.markdown(
         """
         <style>

@@ -7,7 +7,7 @@ def load_css():
     st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
 def st_button(icon, url, label, iconsize):
-    icon_path = f'/icons/{icon}.png'  # Caminho para o ícone
+    icon_path = f'{icon}.png'  # Caminho para o ícone
     if icon in ['linkedin', 'instagram', 'whatsapp', 'telegram']:
         button_code = f'''
         <p>

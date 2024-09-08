@@ -2,54 +2,73 @@ import streamlit as st
 from st_functions import st_button, load_css, get_base64_image
 from PIL import Image
 
-load_css()
+#load_css()
 
 def add_custom_css():
+    # Caminho da imagem de fundo
+    background_image_base64 = get_base64_image("background.jpg")  # Substitua pelo caminho correto da sua imagem
     
-    background_image_base64 = get_base64_image("background.jpg")
-    
-    st.markdown(
-        """
+    st.markdown(f"""
         <style>
-        /* Estilizando a coluna col2 com imagem de fundo */
-        .col2-custom {
-            position: relative;
+        /* Ajuste de margens e alinhamento */
+        .css-12oz5g7.egzxvld2 {{
+            padding-top: 0px;
+        }}
+
+        .css-1v0mbdj.etr89bj1 {{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            min-width: 180px;
+            max-width: 40%;
+        }}
+
+        .css-10trblm.e16nr0p30 {{
+            font-weight: bold;
+            text-align: center;
+        }}
+
+        p {{
+            font-size: 19px;
+        }}
+
+        MainMenu {{
+            visibility: hidden;
+        }}
+        footer {{
+            visibility: hidden;
+        }}
+        header {{
+            visibility: hidden;
+        }}
+
+        /* Aplicando a imagem de fundo em base64 */
+        .stApp {{
             background-image: url("data:image/jpeg;base64,{background_image_base64}");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100%;
-        }
+            background-attachment: fixed;
+        }}
 
-        /* Layer cinza sobre a imagem de fundo */
-        .col2-custom::before {
-            content: '';
+        /* Overlay cinza transparente */
+        .overlay {{
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(128, 128, 128, 0.5); /* Camada cinza com transparência */
-            z-index: 1;
-        }
-
-        /* Ajustando o conteúdo da coluna col2 para estar sobre o background */
-        .col2-custom > div {
-            position: relative;
-            z-index: 2; /* Coloca o conteúdo acima do overlay */
-        }
+            background-color: rgba(128, 128, 128, 0.5); /* Layer cinza com 50% de transparência */
+            z-index: -1;
+        }}
         </style>
-        """,
-        unsafe_allow_html=True
-    )
+    """, unsafe_allow_html=True)
 
+# Função para carregar e aplicar o CSS
 add_custom_css()
 
 col1, col2, col3 = st.columns(3)
-with col2:
-    st.markdown('<div class="col2-custom">', unsafe_allow_html=True)
-    col2.image(Image.open('dp.png'))
-    st.markdown('</div>', unsafe_allow_html=True)
+col2.image(Image.open('dp.png'))
 
 st.header('Jullie Canejo 🫶🏻')
 

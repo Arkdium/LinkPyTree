@@ -24,8 +24,7 @@ def st_button(icon, url, label, iconsize):
                 align-items: center; 
                 justify-content: center; 
                 text-decoration: none; 
-                padding: 10px 20px; 
-                border-radius: 8px; 
+                border-radius: 10px; 
                 border: 2px solid #333333; 
                 background-color: #333333; 
                 color: white; 

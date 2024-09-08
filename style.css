@@ -28,3 +28,7 @@ footer {
 header {
     visibility: hidden;
 }
+
+block-container {
+    background-image: 'background.jpg';
+}

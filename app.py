@@ -7,6 +7,7 @@ load_css()
 def add_custom_css():
     
     background_image_base64 = get_base64_image("background.jpg")
+    
     st.markdown(
         """
         <style>
@@ -61,4 +62,3 @@ st_button('whatsapp', 'wa.me/351932676539', 'Fale comigo no Whatsapp', icon_size
 st_button('star', 'https://chat.whatsapp.com/HczP5bUqL1l7YtIwE1LMkF', 'Donzelas no Volante 🚘', icon_size)
 #st_button('telegram', 't.me/', 'Fale comigo no Telegram', icon_size)
 #st_button('linkedin', 'https://www.linkedin.com/in/', 'Follow me on LinkedIn', icon_size)
-

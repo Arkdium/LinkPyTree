@@ -18,44 +18,52 @@ def st_button(icon, url, label, iconsize):
         # Codifica a imagem em base64
         icon_base64 = get_base64_image(icon_path)
         button_code = f'''
-    <style>
-        a.link-button {{
-            color: white !important;  /* Cor padrão do link */
-            text-decoration: none !important;
-        }}
-        a.link-button:visited {{
-            color: #999999 !important;  /* Cor para links já visitados */
-        }}
-        a.link-button:hover {{
-            color: #FFD700 !important;  /* Cor ao passar o mouse sobre o link (hover) */
-        }}
-        a.link-button:active {{
-            color: #FF4500 !important;  /* Cor no momento do clique */
-        }}
-    </style>
-    <p style="text-align: center; width: 100%;">
-        <a href="{url}" target="_blank" class="link-button" type="button" aria-pressed="true" style="
-            display: block;  
-            align-items: center; 
-            justify-content: center; 
-            text-decoration: none !important;  /* Remove sublinhado */
-            color: white !important;  /* Cor do texto */
-            padding: 10px 20px; 
-            border-radius: 8px; 
-            background: linear-gradient(90deg, #4169E1, #333333);  /* Gradiente de azul royal para cinza escuro */
-            width: 100%;  /* Largura total */
-            font-size: 16px;  /* Tamanho do texto */
-            margin: 10px 0;  /* Margem centralizada */
-            text-align: center;
-            border: 2px solid transparent; /* Define a borda para começar como transparente */
-            background-origin: border-box;
-            background-clip: padding-box, border-box;
-            box-shadow: 0px 0px 0px 2px transparent;
-            ">
-            <img src="data:image/png;base64,{icon_base64}" width="{iconsize}" height="{iconsize}" style="margin-right: 10px;">
-            {label}
-        </a>
-    </p>'''
+        <p style="text-align: center; width: 100%;">
+            <a href="{url}" target="_blank" class="btn btn-outline-primary btn-lg" type="button" aria-pressed="true" style="
+                display: block;  
+                align-items: center; 
+                justify-content: center; 
+                text-decoration: none; 
+                padding: 10px 20px; 
+                border-radius: 8px; 
+                background: linear-gradient(90deg, #4169E1, #333333);  /* Gradiente de azul royal para cinza escuro */
+                color: white !important;  /* Texto sempre branco */
+                width: 100%;  /* Largura total */
+                font-size: 16px;  /* Tamanho do texto */
+                margin: 10px 0;  /* Margem centralizada */
+                text-align: center;
+                border: 2px solid transparent; /* Define a borda para começar como transparente */
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+                box-shadow: 0px 0px 0px 2px transparent;
+                ">
+                <img src="data:image/png;base64,{icon_base64}" width="{iconsize}" height="{iconsize}" style="margin-right: 10px;">
+                {label}
+            </a>
+        </p>'''
+    else:
+        button_code = f'''
+        <p style="text-align: center; width: 100%;">
+            <a href="{url}" target="_blank" class="btn btn-outline-primary btn-lg" type="button" aria-pressed="true" style="
+                display: block;  
+                padding: 10px 20px; 
+                border-radius: 8px; 
+                background: linear-gradient(90deg, #4169E1, #333333);  /* Gradiente de azul royal para cinza escuro */
+                color: white !important;  /* Texto sempre branco */
+                text-align: center; 
+                text-decoration: none; 
+                width: 100%;  /* Largura total */
+                font-size: 16px;  /* Tamanho do texto */
+                margin: 10px 0; /* Margem centralizada */
+                text-align: center;
+                border: 2px solid transparent;
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+                box-shadow: 0px 0px 0px 2px transparent;
+                ">
+                {label}
+            </a>
+        </p>'''
 
     st.markdown(button_code, unsafe_allow_html=True)
 

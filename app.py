@@ -52,18 +52,35 @@ def add_custom_css():
             overflow: hidden;        
         }}
         
-        a.link-button {{
-            color: white !important;  /* Cor padrão do link */
+       .link-button {{
+            display: block;
+            align-items: center;
+            justify-content: center;
             text-decoration: none !important;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #4169E1, #333333);
+            width: 100%;
+            font-size: 16px;
+            margin: 10px 0;
+            text-align: center;
+            border: 2px solid transparent;
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            box-shadow: 0px 0px 0px 2px transparent;
         }}
-        a.link-button:visited {{
-            color: #999999 !important;  /* Cor para links já visitados */
+        .link-button:link {{
+            color: white !important;  /* Cor para links não visitados */
         }}
-        a.link-button:hover {{
-            color: #FFD700 !important;  /* Cor ao passar o mouse sobre o link (hover) */
+        .link-button:visited {{
+            color: #999999 !important;  /* Cor para links visitados */
         }}
-        a.link-button:active {{
-            color: #FF4500 !important;  /* Cor no momento do clique */
+        .link-button:hover {{
+            color: #FFD700 !important;  /* Cor ao passar o mouse */
+        }}
+        .link-button:active {{
+            color: #FF4500 !important;  /* Cor ao clicar */
         }}
 
         </style>

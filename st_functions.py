@@ -26,10 +26,10 @@ def st_button(icon, url, label, iconsize):
                 text-decoration: none; 
                 padding: 10px 20px; 
                 border-radius: 8px; 
-                border: 2px solid #333333; 
-                background-color: #333333; 
+                border: 2px solid #007bff; 
+                background: linear-gradient(90deg, #007bff, #00c6ff);  /* Gradiente de fundo */
                 color: white; 
-                width: 100%;  /* Largura adaptável */
+                width: 80%;  /* Largura adaptável */
                 max-width: 500px;  /* Limita a largura máxima */
                 min-width: 200px;  /* Define a largura mínima para telas pequenas */
                 font-size: 16px;  /* Tamanho do texto */

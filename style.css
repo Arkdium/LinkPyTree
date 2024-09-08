@@ -30,11 +30,11 @@ header {
 }
 
 .stApp {
-    background-image: url('background.jpg') !important; /* Caminho relativo da imagem */
-    background-size: cover;    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url('background.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
 }
 
 .overlay {

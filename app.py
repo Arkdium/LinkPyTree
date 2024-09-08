@@ -52,7 +52,7 @@ def add_custom_css():
             overflow: hidden;        
         }}
         
-       link-button {{
+       .link-button {{
             display: block;
             align-items: center;
             justify-content: center;

@@ -43,15 +43,10 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {{            
+        viewerBadge_link__qRIco {{            
             visibility: hidden !important;
             display: none !important;
         }}   
-                
-        [data-testid="manage-app-button"] {{
-            display: none !important;
-            visibility: hidden !important;
-        }} 
              
         #MainMenu {{
             visibility: hidden;

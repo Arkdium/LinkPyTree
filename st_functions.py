@@ -26,7 +26,7 @@ def add_custom_css():
             max-width: 40%;
         }}
                 
-        .stAlert {{
+        .css-17z2rne.e13vu3m50 {{
             text-align: center;
             
         }}

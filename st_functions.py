@@ -43,7 +43,7 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        .styles_terminalButton__JBj5T {{            
+        .styles_stateContainer__CelYF.styles_terminalButton__JBj5T {{            
             visibility: hidden !important;
             display: none !important;
         }}   
@@ -56,9 +56,11 @@ def add_custom_css():
         #MainMenu {{
             visibility: hidden;
         }}
+                
         footer {{
             visibility: hidden;
         }}
+                
         header {{
             visibility: hidden;
         }}

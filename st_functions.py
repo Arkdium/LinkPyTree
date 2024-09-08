@@ -26,7 +26,7 @@ def add_custom_css():
             max-width: 40%;
         }}
                 
-        .center-text {{
+        .stAlert {{
             text-align: center;
             font-size: 18px;
             font-weight: bold;

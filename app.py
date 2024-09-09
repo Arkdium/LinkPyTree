@@ -17,5 +17,5 @@ st.info('Motorista TVDE no Porto.')
 icon_size = 45
 
 st_button('instagram', 'https://www.instagram.com/ju.uberporto?igsh=MWQ3b3o2emxneWV3eg==', 'Me segue no Insta!', icon_size)
-st_button('whatsapp', 'wa.me/351932676539', 'Fale comigo no Whatsapp', icon_size)
+st_button('whatsapp', 'https://wa.me/message/Y4UAC4UBVDE7H1', 'Fale comigo no Whatsapp', icon_size)
 st_button('star', 'https://chat.whatsapp.com/HczP5bUqL1l7YtIwE1LMkF', 'Donzelas no Volante 🚘', icon_size)

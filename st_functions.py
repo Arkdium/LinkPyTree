@@ -43,8 +43,8 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        .styles_stateContainer__CelYF {{            
-            visibility: hidden !important;            
+        .viewerBadge_container__r5tak {{            
+            visibility: collapse !important;            
         }}   
              
         #MainMenu {{

@@ -109,24 +109,13 @@ def add_custom_css():
         </style>     
 
         <script>
-        // Função para remover o botão 'Manage app' diretamente do DOM
-        function removeManageAppButton() {{
-            var manageAppButton = document.querySelector('button[data-testid="manage-app-button"]');
-            if (manageAppButton) {{
-                manageAppButton.parentNode.removeChild(manageAppButton);
-            }}
-        }}
 
-        // Remove o botão assim que o DOM estiver pronto
-        document.addEventListener('DOMContentLoaded', function() {{
-            removeManageAppButton();
-        }});
+        <script type="text/javascript" DEFER="DEFER">
 
-        // Verifica continuamente e remove o botão, caso ele reapareça
-        setInterval(function() {{
-            removeManageAppButton();
-        }}, 1000);  // Verifica a cada segundo
-        </script>  
+        document.querySelector(".viewerBadge_container__r5tak").style.visibility = "hidden";
+
+        </script>
+
 
     """, unsafe_allow_html=True)
 

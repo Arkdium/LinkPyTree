@@ -105,7 +105,7 @@ def add_custom_css():
                 }}
             ';
             document.head.appendChild(style);  // Adiciona o CSS dinamicamente ao <head>
-        }}, 5000);  // Delay de 5 segundos (5000 milissegundos)
+        }}, 10000);  // Delay de 5 segundos (5000 milissegundos)
         </script>
 
 

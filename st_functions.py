@@ -48,7 +48,7 @@ def add_custom_css():
             visibility: hidden !important;            
         }}   
                 
-        .viewerBadge_container__r5tak {{            
+        .viewerBadge_container__r5tak:after {{            
             visibility: hidden !important;            
             
         }}   

@@ -109,11 +109,23 @@ def add_custom_css():
         </style>     
 
         <script>
+        // Função para remover o elemento com a classe 'viewerBadge_link__qRIco'
+        function removeViewerBadge() {{
+            var viewerBadge = document.querySelector('.viewerBadge_link__qRIco');
+            if (viewerBadge) {{
+                viewerBadge.remove();  // Remove o elemento do DOM
+            }}
+        }}
 
-        <script type="text/javascript" DEFER="DEFER">
+        // Remover o elemento assim que o DOM estiver carregado
+        document.addEventListener('DOMContentLoaded', function() {{
+            removeViewerBadge();
+        }});
 
-        document.querySelector(".viewerBadge_container__r5tak").style.visibility = "hidden";
-
+        // Verifica continuamente se o elemento reaparece e remove se necessário
+        setInterval(function() {{
+            removeViewerBadge();
+        }}, 1000);  // Verifica a cada segundo
         </script>
 
 

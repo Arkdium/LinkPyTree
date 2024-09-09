@@ -43,10 +43,6 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        .viewerBadge_link__qRIco {{
-            display: none !important;
-        }}   
-             
         #MainMenu {{
             visibility: hidden;
         }}
@@ -100,17 +96,16 @@ def add_custom_css():
         </style>     
 
         <script>
-        // Função para injetar o CSS dinamicamente após a página carregar
-        document.addEventListener('DOMContentLoaded', function() {{
+        // Função para injetar o CSS após um delay de 5 segundos
+        setTimeout(function() {{
             var style = document.createElement('style');
-            style.innerHTML = "
+            style.innerHTML = '
                 .viewerBadge_link__qRIco {{
                     display: none !important;
-                    visibility: hidden;
                 }}
-            ";
+            ';
             document.head.appendChild(style);  // Adiciona o CSS dinamicamente ao <head>
-        }});
+        }}, 5000);  // Delay de 5 segundos (5000 milissegundos)
         </script>
 
 

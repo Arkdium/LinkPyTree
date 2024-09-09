@@ -43,17 +43,8 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        .reportview-container .main footer {{visibility: hidden;}}    
-                
-        a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N:before {{            
-            visibility: hidden !important;            
+        .viewerBadge_link__qRIco {{
             display: none !important;
-        }}   
-                
-        .viewerBadge_container__r5tak {{            
-            visibility: hidden !important;            
-            display: none !important;   
-            
         }}   
              
         #MainMenu {{

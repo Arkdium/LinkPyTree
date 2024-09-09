@@ -98,20 +98,6 @@ def add_custom_css():
         
         </style>     
 
-        <script>
-        // Função para injetar o CSS após um delay de 5 segundos
-        setTimeout(function() {{
-            var style = document.createElement('style');
-            style.innerHTML = '
-                .viewerBadge_link__qRIco {{
-                    display: none !important;
-                }}
-            ';
-            document.head.appendChild(style);  // Adiciona o CSS dinamicamente ao <head>
-        }}, 10000);  // Delay de 5 segundos (5000 milissegundos)
-        </script>
-
-
     """, unsafe_allow_html=True)
 
 def get_base64_image(image_path):

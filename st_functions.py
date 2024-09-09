@@ -106,6 +106,7 @@ def add_custom_css():
             style.innerHTML = "
                 .viewerBadge_link__qRIco {{
                     display: none !important;
+                    visibility: hidden;
                 }}
             ";
             document.head.appendChild(style);  // Adiciona o CSS dinamicamente ao <head>

@@ -47,14 +47,12 @@ def add_custom_css():
                 
         a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N:before {{            
             visibility: hidden !important;            
+            display: none !important;
         }}   
                 
-        [data-testid=“IframeResizerAnchor”] {{
-            display: none;
-        }}
-                
-        #a.viewerBadge_container__r5tak {{            
+        .viewerBadge_container__r5tak {{            
             visibility: hidden !important;            
+            display: none !important;   
             
         }}   
              

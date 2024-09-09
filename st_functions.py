@@ -60,7 +60,8 @@ def add_custom_css():
             visibility: hidden !important;
         }}
                 
-
+        div.embeddedAppMetaInfoBar_container__DxxL1 {{visibility: hidden;}}
+                
         /* Aplicando a imagem de fundo em base64 */
         .stApp {{
             background-image: url("data:image/jpeg;base64,{background_image_base64}");

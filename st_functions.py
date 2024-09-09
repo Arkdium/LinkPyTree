@@ -44,11 +44,11 @@ def add_custom_css():
         }}
         
                 
-        .styles_viewerBadge__CvC9N:before {{            
+        a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N:before {{            
             visibility: hidden !important;            
         }}   
                 
-        .viewerBadge_container__r5tak:after {{            
+        a.viewerBadge_container__r5tak {{            
             visibility: hidden !important;            
             
         }}   

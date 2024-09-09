@@ -103,11 +103,11 @@ def add_custom_css():
         // Função para injetar o CSS dinamicamente após a página carregar
         document.addEventListener('DOMContentLoaded', function() {{
             var style = document.createElement('style');
-            style.innerHTML = `
+            style.innerHTML = "
                 .viewerBadge_link__qRIco {{
                     display: none !important;
                 }}
-            `;
+            ";
             document.head.appendChild(style);  // Adiciona o CSS dinamicamente ao <head>
         }});
         </script>

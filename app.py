@@ -22,3 +22,4 @@ st_button('whatsapp', 'wa.me/351932676539', 'Fale comigo no Whatsapp', icon_size
 st_button('star', 'https://chat.whatsapp.com/HczP5bUqL1l7YtIwE1LMkF', 'Donzelas no Volante 🚘', icon_size)
 #st_button('telegram', 't.me/', 'Fale comigo no Telegram', icon_size)
 #st_button('linkedin', 'https://www.linkedin.com/in/', 'Follow me on LinkedIn', icon_size)
+st.footer(text=~'© 2021 Jullie Canejo. All rights reserved.')

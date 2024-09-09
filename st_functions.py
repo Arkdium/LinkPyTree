@@ -43,8 +43,8 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        .viewerBadge_container__r5tak {{            
-            visibility: collapse !important;            
+        .viewerBadge_link__qRIco {{            
+            visibility: hidden !important;            
         }}   
              
         #MainMenu {{

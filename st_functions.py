@@ -43,8 +43,14 @@ def add_custom_css():
             font-size: 19px;
         }}
         
-        .viewerBadge_container__r5tak, .styles_viewerBadge__CvC9N {{            
+                
+        .styles_viewerBadge__CvC9N {{            
             visibility: hidden !important;            
+        }}   
+                
+        .viewerBadge_container__r5tak {{            
+            visibility: hidden !important;            
+            
         }}   
              
         #MainMenu {{

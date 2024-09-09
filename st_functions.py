@@ -49,6 +49,10 @@ def add_custom_css():
             visibility: hidden !important;            
         }}   
                 
+        [data-testid=“IframeResizerAnchor”] {{
+            display: none;
+        }}
+                
         #a.viewerBadge_container__r5tak {{            
             visibility: hidden !important;            
             

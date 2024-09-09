@@ -44,7 +44,7 @@ def add_custom_css():
         }}
         
                 
-        .styles_viewerBadge__CvC9N {{            
+        .styles_viewerBadge__CvC9N:before {{            
             visibility: hidden !important;            
         }}   
                 

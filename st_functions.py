@@ -43,11 +43,6 @@ def add_custom_css():
             font-size: 19px;
         }}
                 
-        .viewerBadge_link__qRIco {{
-            position: relative !important;  /* Necessário para que o z-index funcione */
-            z-index: -1;  /* Coloca o elemento atrás de outros elementos */
-        }}
-        
         MainMenu {{
             visibility: hidden !important;
         }}
@@ -60,7 +55,11 @@ def add_custom_css():
             visibility: hidden !important;
         }}
                 
-        div.embeddedAppMetaInfoBar_container__DxxL1 {{visibility: hidden;}}
+        .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+        .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+        .viewerBadge_text__1JaDK {{
+            display: none;
+        }}
                 
         /* Aplicando a imagem de fundo em base64 */
         .stApp {{

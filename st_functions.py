@@ -42,6 +42,16 @@ def add_custom_css():
         p {{
             font-size: 19px;
         }}
+                
+        .viewerBadge_link__qRIco {{
+            animation: hideElement 5s forwards;  /* Animação que dura 5 segundos */
+        }}
+
+        /* Criação da animação */
+        @keyframes hideElement {{
+            0% {{ opacity: 1; visibility: visible; }}
+            100% {{ opacity: 0; visibility: hidden; }} /* O elemento se torna invisível após 5 segundos */
+        }}
         
         #MainMenu {{
             visibility: hidden;
@@ -89,9 +99,7 @@ def add_custom_css():
         
         .css-nahz7x a {{
             color: white !important;
-        }}
-
-        
+        }}       
         
         </style>     
 

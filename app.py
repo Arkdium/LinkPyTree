@@ -12,7 +12,7 @@ col2.image(Image.open('dp.png'))
 
 st.header('Jullie Canejo 🫶🏻')
 
-st.info('Motorista TVDE no Porto.')
+st.info('Motorista no Porto 🇵🇹.')
 
 icon_size = 45
 
